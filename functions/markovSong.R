@@ -6,7 +6,7 @@ markovsong <- function(inputCorpus, inputNWords){
   
   #################################
   ## 1. Fit markov chain to corpus
-  fit_markov <- corpus %>% markovchainFit(method = "laplace")
+  fit_markov <- inputCorpus %>% markovchainFit(method = "laplace")
   set.seed(2202)
   
   #################################
